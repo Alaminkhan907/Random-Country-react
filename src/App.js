@@ -29,7 +29,7 @@ function App() {
       <header className="App-header">
         <h1>Country loaded : {countries.length}</h1>
         <h4>Country added : {cart.length}</h4>
-        <Cart></Cart>
+        <Cart cart={cart}></Cart>
        {
          countries.map(country => <Country country={country} handleAddCountry={handleAddCountry} key={country.alpha3Code}></Country>)
        }
